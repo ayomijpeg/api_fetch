@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokemon Fetcher</title>
+    <!-- Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.23/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-gray-100 font-sans flex justify-center items-center min-h-screen">
+
+    <div class="text-center p-5 bg-white rounded-xl shadow-xl w-96">
+        <h1 class="text-3xl font-semibold text-teal-600 mb-4">Fetch a Pokemon</h1>
+        
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon Name" class="px-4 py-2 border rounded-lg mb-4 w-full text-lg" />
     
+        <button onclick="fetchData()" class="dynamic-btn px-6 py-3 text-lg font-semibold rounded-lg bg-teal-500 text-white hover:bg-teal-600 focus:outline-none mb-4 w-full">
+            Fetch Pokemon
+        </button>
+    
+        <!-- Error Message Section -->
+        <p id="errorMessage" class="text-red-500 font-semibold mb-4"></p>
+    
+        <div class="mt-4">
+            <img src="" id="pokemonSprite" alt="Pokemon Sprite" class="rounded-lg mx-auto" style="display: none; max-width: 200px;"/>
+        </div>
+    </div>
+    
+    </div>
 
-    <input type="text" id="pokemonName" placeholder="Enter Pokemon Name">
-     <button onclick="fetchData()">Fetch Pokemon</button> <br>
-
-
-       <img src="" id="pokemonSprite" alt="Pokemon Sprite" style="display: none;">
     <script src="index.js"></script>
 </body>
 </html>
