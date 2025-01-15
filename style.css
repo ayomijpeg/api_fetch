@@ -1,0 +1,21 @@
+#myButton{
+    font-size: 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+Img{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.dynamic-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
